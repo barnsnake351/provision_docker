@@ -11,7 +11,7 @@
       - name: provision_docker_host_four
         image: "chrismeyers/centos7"
       - name: provision_docker_host_five
-        image: "bengleman/ubuntu-systemd-python:16.04"
+        image: "barnsnake351/ubuntu-systemd-python:16.04"
         provision_docker_privileged: "{{ false }}"
         provision_docker_security_opts:
           - seccomp:unconfined

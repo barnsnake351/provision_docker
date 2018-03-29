@@ -20,7 +20,7 @@ Works with docker for Mac, VirtualBox, VMware Fusion, docker native. Using docke
 [robots]
 optimus image="chrismeyers/ubuntu12.04"
 bumblebee image="ubuntu-upstart:14.04"
-cliffjumper image="bengleman/ubuntu-systemd-python:16.04" provison_docker_tmpfs=["/run","/run/lock"] provision_docker_volumes=["/sys/fs/cgroup:/sys/fs/cgroup:ro"] provision_docker_security_opts=["seccomp:unconfined"] provision_docker_tty=True provision_docker_privileged=False
+cliffjumper image="barnsnake351/ubuntu-systemd-python:16.04" provison_docker_tmpfs=["/run","/run/lock"] provision_docker_volumes=["/sys/fs/cgroup:/sys/fs/cgroup:ro"] provision_docker_security_opts=["seccomp:unconfined"] provision_docker_tty=True provision_docker_privileged=False
 ```
 ```yaml
 # test.yml

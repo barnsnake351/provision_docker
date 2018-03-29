@@ -13,7 +13,7 @@
       - name: provision_docker_host_five
         image: "turkenh/docker-ubuntu1404-ansible-host"
       - name: provision_docker_host_six
-        image: "bengleman/ubuntu-systemd-python:16.04"
+        image: "barnsnake351/ubuntu-systemd-python:16.04"
         provision_docker_privileged: "{{ false }}"
         provision_docker_security_opts:
           - seccomp:unconfined
