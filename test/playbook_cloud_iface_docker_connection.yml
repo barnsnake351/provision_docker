@@ -12,6 +12,18 @@
         image: "chrismeyers/centos7"
       - name: provision_docker_host_five
         image: "turkenh/docker-ubuntu1404-ansible-host"
+      - name: provision_docker_host_six
+        image: "bengleman/ubuntu-systemd-python:16.04"
+        provision_docker_privileged: "{{ false }}"
+        provision_docker_security_opts:
+          - seccomp:unconfined
+        provision_docker_tmpfs:
+          - /run
+          - /run/lock
+        provision_docker_tty: "{{ true }}"
+        provision_docker_volumes:
+          - /sys/fs/cgroup:/sys/fs/cgroup:ro
+
   roles:
     - { role: provision_docker, provision_docker_inventory: "{{ inventory }}", provision_docker_use_docker_connection: true }
 

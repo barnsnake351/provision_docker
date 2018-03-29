@@ -17,3 +17,8 @@
   shell: 'echo "I am a self aware host and my name is starscream." > /tmp/compare && cmp {{ file }} /tmp/compare'
   run_once: true
   delegate_to: "starscream"
+
+- name: Ensure clifjumper file contents
+  shell: 'echo "I am a self aware host and my name is cliffjumper." > /tmp/compare && cmp {{ file }} /tmp/compare'
+  run_once: true
+  delegate_to: "cliffjumper"

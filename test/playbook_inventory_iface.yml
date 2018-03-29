@@ -3,7 +3,6 @@
   hosts: localhost
   roles:
     - role: provision_docker
-      provision_docker_privileged: true,
       provision_docker_inventory_group: "{{ groups['robots'] }}"
 
 - name: Run tests for inventory iface

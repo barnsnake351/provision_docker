@@ -1,6 +1,6 @@
 .PHONY: cloud inventory docker_inventory docker_cloud groups clean
 
-containers = provision_docker_host_one provision_docker_host_two provision_docker_host_three provision_docker_host_four provision_docker_host_five optimus ironhide megatron starscreamo hcwohl
+containers = provision_docker_host_one provision_docker_host_two provision_docker_host_three provision_docker_host_four provision_docker_host_five optimus ironhide megatron starscreamo hcwohl cliffjumper
 
 all: cloud inventory docker_inventory docker_cloud groups network_mode docker_links docker_publish docker_volumes_inventory docker_volumes_cloud
 
